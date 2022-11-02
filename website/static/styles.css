@@ -1,0 +1,34 @@
+.question {
+	font-size: 34px;
+}
+
+.questionButton {
+	margin-left: 20px;
+	margin-right: 10px;
+	height: 1.65em;
+	accent-color: black;
+	width: 1.5em;
+}
+
+.form-center {
+	/* display:flex; */
+	justify-content: center;
+	/* display: inline-block; */
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.btn-xl {
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.body {
+	background-image:url("../crying-jordan.png");
+	background-size: cover;
+	color: red;
+	height: 650px;
+	padding: 100px 0 0 0;
+}

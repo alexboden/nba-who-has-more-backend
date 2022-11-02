@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+{% load static %}
+
+<html>
+
+<head>
+	<!-- <link rel="stylesheet" {% static "/styles.css" %} type="text/css"> -->
+
+	<link rel="stylesheet" type="text/css" href="{% static "/style.css" %}" />
+
+</head>
+<body style="background-image: url({% static '/crying-jordan-34-opacity.png' %}); background-repeat: repeat; background-size: 200px 100px;">
+
+	<h1 class="text-center mt-3 crying-jordan">
+		{{correct}}. Final Score: {{score}}
+	</h1>
+	<h2 class="text-center font-weight-bold"> {{question}} </h2>
+	
+	<h3 class="text-center"> Answer: </h3>
+	<h4 class="text-center">
+		{{player1}}
+	</h4>
+	<h4 class="text-center">
+		{{player2}}
+	</h4>
+	
+	<form class="text-center btn-lg" method="post" action="">
+		{% csrf_token %}
+		<button class="btn btn-outline-dark btn-lg" href="">Play Again</button>
+	</form>
+	
+	</html>
+</body>
+	
+{% endblock main %}

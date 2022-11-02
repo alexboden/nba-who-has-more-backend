@@ -1,0 +1,28 @@
+{% extends 'base-with-score.html' %}
+
+{% block content %}
+<html>
+
+	<h1 class="text-center font-weight-bold"> {{question}} </h1>
+
+	<h2 class="text-center"> Answer: </h2>
+	<h3 class="text-center">
+		{{player1}}
+	</h3>
+	<h3 class="text-center">
+		{{player2}}
+	</h3>
+	<h3 class="text-center">
+		{{correct}}
+	</h3>
+	<h3 class="text-center">
+		{{score}}
+	</h3>
+	<form method="post" action="">
+		{% csrf_token %}
+		<button href="">continue</button>
+	</form>
+
+</html>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+<!-- {% extends 'base.html' %} -->
+{% block content %}
+
+<html>
+{% for q in questions%}
+
+<h1> {{q.question}} </h1>
+
+<h1> {{q.player1_name}} </h1>
+
+<h1> {{q.player2_name}} </h1>
+
+
+{% endfor %}
+</html>
+
+{% endblock content %}

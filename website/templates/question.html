@@ -1,0 +1,36 @@
+{% extends 'base-with-score.html' %}
+{% block content %}
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/styles.css" />
+	</head>
+	<body>
+		<h1 class="text-center font-weight-bold padding-top"> {{question}} </h1>
+		<style>
+			.form-center {
+			/* display:flex; */
+			justify-content: center;
+			/* display: inline-block; */
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			}
+		</style>
+		<div class="form-center justify-content-center">
+			<form method="post" action="">
+				{% csrf_token %}
+				<input class="questionButton" type="radio" id="player1" name="answer" value="{{player1_name}}" required>
+				<label class="question" for="player1"> {{ player1_name }} </label>
+				<br>
+				<input class="questionButton" type="radio" id="player2" name="answer" value="{{player2_name}}">
+				<label class="question" for="player2"> {{ player2_name }} </label><br>
+			
+				<button class="btn btn-default btn-outline-dark btn-lg button-center p-2" type="submit" name = "question_id" value="{{question_id}}">Confirm</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+
+{% endblock content %}
