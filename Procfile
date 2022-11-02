@@ -1,1 +1,1 @@
-web gunicorn nba.nba.wsgi:application --log-file -
+web gunicorn nba.wsgi:application --log-file -
