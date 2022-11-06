@@ -5,7 +5,7 @@ from random import randint
 class Player(models.Model):
     name = models.CharField(max_length=100)
     data = models.JSONField()
-    
+
     def get_count(self, stat, amount):
         l = self.data.get(stat)
         count = 0
