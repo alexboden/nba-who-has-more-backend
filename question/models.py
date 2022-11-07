@@ -61,13 +61,14 @@ def generate_question():
     q.player1_count = count_stat(player1.data.get(stat[1]), stat[0])
     q.player2_count = count_stat(player2.data.get(stat[1]), stat[0])
     
-     
+    if q.player1_count == 0 or q.player2_count == 0:
+        return generate_question()
+    
     if q.player1_count > q.player2_count:
         q.answer = player1.name
     elif q.player2_count > q.player1_count:
         q.answer = player2.name
     else:
-        print('equal')
         return generate_question()
     
     q.save()
