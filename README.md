@@ -11,7 +11,7 @@ https://nba-who-has-more.herokuapp.com
 - Heroku (Deployment and database hosting)
 - Python (Gathering stats using https://github.com/swar/nba_api)
 
-**Note**: *This repository only contains the backend deployment, the backend code is here:* https://github.com/alexboden/nba-who-has-more-frontend
+**Note**: *This repository only contains the backend deployment, the frontend code is here:* https://github.com/alexboden/nba-who-has-more-frontend
 
 ## Screenshots
 <img width="1467" alt="Screenshot 2023-04-19 at 9 38 56 AM" src="https://user-images.githubusercontent.com/43760105/233093329-3f1a2cf8-4199-4748-8102-3f32be9d7f81.png">
